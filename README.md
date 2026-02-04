@@ -25,19 +25,25 @@ This repository contains data and analysis scripts from **Walsh et al., (2026) I
 
 ### Running Scripts
 
-The included script `scripts/00_setup.R` can be used to install all package dependencies at once.
+The included script `Scripts/00_setup.R` can be used to install all package dependencies at once.
 
-Scripts in this repository use the `here` library to dynamically set paths. For this to work correctly, Rstudio must be opened by double-clicking on one of the files in `scripts/`. Path errors will appear if Rstudio was first opened using a shortcut or a script from a different location.
+Scripts in this repository use the `here` library to dynamically set paths. For this to work correctly, Rstudio must be opened by double-clicking on one of the files in `Scripts/`. Path errors will appear if Rstudio was first opened using a shortcut or a script from a different location.
 
 
 ## Contents
-| Item                        | Description                                                                              |
-|-----------------------------|------------------------------------------------------------------------------------------|
-| `data/`                     | Contains all data files used in this study                                               |
-| └─ `alphafold/`             | Contains HA alphafold model CIF file and SVG render                                      |
-| └─ `neut75.csv`             | Neutralisation assay 1:75 dilution raw data                                              |
-| └─ `sample_metadata.csv`    | Serum sample metadata file                                                               |
-| └─ `gisaid_260126pn.pdf`    | GISAID record and DOI link                                                               |
-| `scripts/`                  | Contains all analysis scripts used in this study                                         |
-| └─ `00_setup.R`             | Convenience R script to install all dependencies used in this repository                 |
-| └─ `01_analysis.R`          | R script for forward model building and statistical analysis of neutralisation data      |
+| Item                         | Description                                                                              |
+|------------------------------|------------------------------------------------------------------------------------------|
+| `Data/`                      | Contains all data files used in this study                                               |
+| └─ `Individuals/`            | Example images of individual segmented larva                                             |
+| └─ `Raw/`                    | Example unprocessed raw images                                                           |
+| └─ `Validation/`             | Example validation images of well & larva segmentation                                   |
+| └─ `Bacteria_order.csv/`     | Ladderised phylogenetic order of bacterial strains for figures                           |
+| └─ `Bacteria_phylogeny.nwk/` | Maximum clade credibility Staphylococcaceae phylogeny                                    |
+| └─ `Galleria_main.csv/`      | Mortality and melanisation dataset                                                       |
+| └─ `Galleria_weights.csv/`   | Weight and pixel area pilot dataset                                                      |
+| └─ `In_vitro.csv/`           | In vitro phage efficacy dataset                                                          |
+| `Models/`                    | Contains all Rdata MCMCglmm model files used in analysis                                 |
+| `Scripts/`                   | Contains all analysis scripts used in this study                                         |
+| └─ `00_setup.R`              | Convenience R script to install all dependencies used in this repository                 |
+| └─ `01_models.R`             | R script for data wrangling and model fitting                                            |
+| `.here`                      | Empty text file used for dynamic pathing with the here() library                         |
