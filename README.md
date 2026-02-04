@@ -31,7 +31,7 @@ Scripts in this repository use the `here` library to dynamically set paths. For 
 
 
 ## Contents
-| Item                         | Description                                                                              |
+| <div style="width:290px">Item</div> | Description                                                                       |
 |------------------------------|------------------------------------------------------------------------------------------|
 | `Data/`                      | Contains all data files used in this study                                               |
 | └─ `Individuals/`            | Example images of individual segmented larva                                             |
