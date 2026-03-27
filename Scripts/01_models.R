@@ -248,10 +248,6 @@ parameters_all_delta$Condition <- "Delta"
 parameters_all$u_Weight <- scale(parameters_all$u_Weight, scale = FALSE)
 parameters_all_delta$u_Weight <- scale(parameters_all_delta$u_Weight, scale = FALSE)
 
-# ----- 1.12. Wrangle in-vitro OD data ------------------------------------------
-
-data_invitro$animal <- ifelse(data_invitro$animal == "8325-4", "83254", data_invitro$animal)
-
 # ------------------------------------------------------------------------------
 # ----- w. MCMCglmms -----------------------------------------------------------
 # ------------------------------------------------------------------------------
@@ -995,7 +991,7 @@ assumptions <- c("unobserved", "cure")
 
 parameters <- c("U", "t50", "k")
 
-invitros <- c("OD", "qPCR")
+invitros <- c("OD")
 
 for (assumption in assumptions){
   for (parameter in parameters){
